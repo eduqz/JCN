@@ -21,6 +21,19 @@ class AboutUs(SingletonModel):
     def __str__(self):
         return "Sobre nós"
 
+class Services(models.Model):
+    title = models.CharField('Título', max_length=50)
+    text = models.TextField('Texto')
+    emoj = models.ImageField(upload_to='services/', verbose_name='Emotion')
+
+    class Meta:
+        ordering = ['title']
+        verbose_name = 'Serviço'
+        verbose_name_plural = 'Serviços'
+
+    def __str__(self):
+        return self.title
+
 class Depositions(models.Model):
     name = models.CharField('Nome da pessoa', max_length=50)
     work = models.CharField('Empresa ou ocupação', max_length=50)
