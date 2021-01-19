@@ -11,6 +11,16 @@ class Banner(SingletonModel):
     def __str__(self):
         return "Banner"
 
+class AboutUs(SingletonModel):
+    about_us = models.TextField('Sobre nós')
+    finance = models.TextField('Finance Outsourcing')
+    
+    class Meta:
+        verbose_name = 'Sobre nós'
+
+    def __str__(self):
+        return "Sobre nós"
+
 class Depositions(models.Model):
     name = models.CharField('Nome da pessoa', max_length=50)
     work = models.CharField('Empresa ou ocupação', max_length=50)
