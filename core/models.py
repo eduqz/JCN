@@ -34,6 +34,26 @@ class Services(models.Model):
     def __str__(self):
         return self.title
 
+class Strip(SingletonModel):
+    emoj_1 = models.ImageField(upload_to='strip/1/', verbose_name='Primeiro emoticon')
+    title_1 = models.CharField('Primeiro título', max_length=12)
+    text_1 = models.TextField('Primeiro texto', max_length=100)
+    emoj_2 = models.ImageField(upload_to='strip/2/', verbose_name='Segundo emoticon')
+    title_2 = models.CharField('Segundo título', max_length=12)
+    text_2 = models.TextField('Segundo texto', max_length=100)
+    emoj_3 = models.ImageField(upload_to='strip/3/', verbose_name='Terceiro emoticon')
+    title_3 = models.CharField('Terceiro título', max_length=12)
+    text_3 = models.TextField('Terceiro texto', max_length=100)
+    emoj_4 = models.ImageField(upload_to='strip/4/', verbose_name='Quarto emoticon')
+    title_4 = models.CharField('Quarto título', max_length=12)
+    text_4 = models.TextField('Quarto texto', max_length=100)
+
+    class Meta:
+        verbose_name = 'Faixa de informações'
+
+    def __str__(self):
+        return "Faixa de informações"
+
 class Depositions(models.Model):
     name = models.CharField('Nome da pessoa', max_length=50)
     work = models.CharField('Empresa ou ocupação', max_length=50)
