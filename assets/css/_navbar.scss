@@ -1,0 +1,44 @@
+#navbar {
+    height: 80px;
+    background-color: $dark-blue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 30px;
+
+    img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        font-family: roboto, sans-serif;
+        font-weight: 600;
+        display: flex;
+
+        a {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            text-decoration: none;
+            width: 110px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav-barra {
+                width: 100%;
+                height: 2px;
+            }
+
+            &:hover {
+                color: white;
+
+                .nav-barra {
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,7 @@
-h1 {
-    color: red;
+$dark-blue: #03234A;
+
+body {
+    margin: 0;
 }
+
+@import '_navbar';

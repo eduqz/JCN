@@ -1,4 +1,36 @@
-h1 {
-  color: red; }
+body {
+  margin: 0; }
+
+#navbar {
+  height: 80px;
+  background-color: #03234A;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0px 30px; }
+  #navbar img {
+    height: 50px;
+    margin-bottom: 10px; }
+  #navbar nav {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    display: flex; }
+    #navbar nav a {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+      text-decoration: none;
+      width: 110px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      #navbar nav a .nav-barra {
+        width: 100%;
+        height: 2px; }
+      #navbar nav a:hover {
+        color: white; }
+        #navbar nav a:hover .nav-barra {
+          background-color: white; }
 
 /*# sourceMappingURL=main.css.map */
