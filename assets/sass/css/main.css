@@ -237,4 +237,18 @@ body {
       font-size: 14px;
       color: black; }
 
+footer {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  footer div {
+    height: 2px;
+    max-width: 1400px;
+    width: 92%;
+    background-color: #0965D6; }
+  footer img {
+    width: 180px; }
+
 /*# sourceMappingURL=main.css.map */
