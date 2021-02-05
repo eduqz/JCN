@@ -1,7 +1,23 @@
 $dark-blue: #03234A;
+$blue-button: #0965D6;
 
 body {
     margin: 0;
 }
 
+@mixin  button {
+    appearance: none;
+    border: none;
+    box-sizing: unset;
+    user-select: none;
+    color: white;
+    font-family: roboto, sans-serif;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 @import '_navbar';
+@import '_banner';

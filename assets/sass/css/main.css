@@ -13,12 +13,11 @@ body {
   #navbar-logo {
     height: 50px;
     margin-bottom: 10px;
-    margin-left: 30px; }
+    margin-left: 4%; }
   #navbar nav {
     font-family: roboto, sans-serif;
     font-weight: 600;
-    display: flex;
-    margin-right: 30px; }
+    display: flex; }
     #navbar nav a {
       color: rgba(255, 255, 255, 0.75);
       font-size: 14px;
@@ -104,5 +103,33 @@ body {
 
 .active {
   display: block; }
+
+#banner {
+  background-image: url(../images/img-banner.png);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+  #banner-title {
+    margin-left: 4%; }
+    #banner-title h1 {
+      width: 360px;
+      font-family: century-gothic, sans-serif;
+      font-weight: 400;
+      font-size: 34px;
+      color: white; }
+    #banner-title-button {
+      background-color: #0965D6;
+      appearance: none;
+      border: none;
+      box-sizing: unset;
+      user-select: none;
+      color: white;
+      font-family: roboto, sans-serif;
+      font-size: 12px;
+      padding: 5px 15px;
+      border-radius: 5px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
