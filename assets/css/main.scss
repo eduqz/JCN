@@ -24,5 +24,23 @@ body {
     }
 }
 
+@mixin titles {
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: $dark-blue;
+
+    @media (max-width: 900px) {
+        font-size: 28px;
+    }
+}
+
+@mixin text-pattern {
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 @import '_navbar';
 @import '_banner';
+@import '_about-us';

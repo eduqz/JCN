@@ -1,0 +1,66 @@
+#about-us {
+    margin-top: 50px;
+
+    &-cards {
+        padding: 0px 4%;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+
+        .about-us-card {
+            width: 570px;
+    
+            h2 {
+                @include titles;
+            }
+    
+            p {
+                @include text-pattern;
+                color: #000000;
+            }
+
+            @media (max-width: 900px) {
+                width: auto;
+            }
+        }
+    }
+
+    &-emojs {
+        margin: 50px 0px;
+        background-color: #CDD3DB;
+        padding: 20px 4%;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+
+        .emojs-cards {
+            img {
+                width: 50px;
+            }
+
+            h3 {
+                font-family: century-gothic, sans-serif;
+                font-weight: 400;
+                font-size: 24px;
+                color: black;
+                margin: 2px 0px; 
+                
+                @media (max-width: 900px) {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                @include text-pattern;
+                color: black;
+            }
+        }
+    }
+}

@@ -106,7 +106,6 @@ body {
 
 #banner {
   background-image: url(../images/img-banner.png);
-  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -171,5 +170,58 @@ body {
         margin-bottom: 4%;
         flex-direction: row;
         align-self: center; } }
+#about-us {
+  margin-top: 50px; }
+  #about-us-cards {
+    padding: 0px 4%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between; }
+    @media (max-width: 900px) {
+      #about-us-cards {
+        flex-direction: column; } }
+    #about-us-cards .about-us-card {
+      width: 570px; }
+      #about-us-cards .about-us-card h2 {
+        font-family: century-gothic, sans-serif;
+        font-weight: 400;
+        font-size: 34px;
+        color: #03234A; }
+        @media (max-width: 900px) {
+          #about-us-cards .about-us-card h2 {
+            font-size: 28px; } }
+      #about-us-cards .about-us-card p {
+        font-family: century-gothic, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #000000; }
+      @media (max-width: 900px) {
+        #about-us-cards .about-us-card {
+          width: auto; } }
+  #about-us-emojs {
+    margin: 50px 0px;
+    background-color: #CDD3DB;
+    padding: 20px 4%;
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 900px) {
+      #about-us-emojs {
+        flex-direction: column; } }
+    #about-us-emojs .emojs-cards img {
+      width: 50px; }
+    #about-us-emojs .emojs-cards h3 {
+      font-family: century-gothic, sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      color: black;
+      margin: 2px 0px; }
+      @media (max-width: 900px) {
+        #about-us-emojs .emojs-cards h3 {
+          font-size: 20px; } }
+    #about-us-emojs .emojs-cards p {
+      font-family: century-gothic, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: black; }
 
 /*# sourceMappingURL=main.css.map */
