@@ -109,7 +109,22 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 900px) {
+    #banner {
+      justify-content: end; } }
+  #banner .banner-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 900px) {
+      #banner .banner-div {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 65%;
+        align-self: flex-end; } }
   #banner-title {
     margin-left: 4%; }
     #banner-title h1 {
@@ -130,6 +145,31 @@ body {
       padding: 5px 15px;
       border-radius: 5px;
       letter-spacing: 1px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      cursor: pointer; }
+      #banner-title-button:focus {
+        outline: transparent; }
+  #banner-bar {
+    width: 35px;
+    height: 200px;
+    margin-right: 4%;
+    background-color: #CDD3DB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px; }
+    #banner-bar img {
+      width: 25px; }
+    #banner-bar svg {
+      width: 25px; }
+    @media (max-width: 900px) {
+      #banner-bar {
+        width: 200px;
+        height: 35px;
+        margin-right: 0%;
+        margin-bottom: 4%;
+        flex-direction: row;
+        align-self: center; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -17,6 +17,11 @@ body {
     border-radius: 5px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    cursor: pointer;
+
+    &:focus {
+        outline: transparent;
+    }
 }
 
 @import '_navbar';
