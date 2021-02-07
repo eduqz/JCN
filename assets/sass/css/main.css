@@ -17,7 +17,8 @@ body {
   #navbar nav {
     font-family: roboto, sans-serif;
     font-weight: 600;
-    display: flex; }
+    display: flex;
+    margin-right: 4%; }
     #navbar nav a {
       color: rgba(255, 255, 255, 0.75);
       font-size: 14px;
@@ -255,6 +256,8 @@ footer {
     background-color: #0965D6; }
   footer #footer-logo {
     width: 180px; }
+  footer #top-button {
+    cursor: pointer; }
 
 #depositions {
   padding-top: 120px;
