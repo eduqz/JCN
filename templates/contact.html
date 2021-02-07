@@ -1,0 +1,55 @@
+{% load static %}
+
+<section id="contact">
+    <div id="contact-text">
+        <h2>Em que podemos ajudar?</h2>
+
+        <di id="contact-text-medias">
+            <div id="localization">
+                <img src="../assets/images/pin.svg" alt="">
+                <p>Empresarial Pontes Corporate Center
+                    R. Barão de Souza Leão, 425 - Boa Viagem, Recife - PE, 51030-300</p>
+            </div>
+
+            <div id="phone">
+                <img src="../assets/images/phone.svg" alt="">
+                <p>55 81 99869-3333</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-forms">
+        <form method="POST" autocomplete="off">
+            <div id="contact-forms-1">
+                <div class="contact-group">
+                   <input type="name" class="contact-field" placeholder="Nome">
+                   <label for="name" class="contact-label">Nome</label>
+                </div>
+   
+                <div class="contact-group">
+                   <input type="email" class="contact-field" placeholder="E-mail*">
+                   <label for="email" class="contact-label">E-mail*</label>
+                </div>
+   
+                <div class="contact-group">
+                   <input type="tel" class="contact-field" placeholder="Telefone">
+                   <label for="tel" class="contact-label">Telefone</label>
+                </div>
+            </div>
+
+            <div id="contact-forms-2">
+                <div class="contact-group">
+                    <input type="text" class="contact-field" placeholder="Assunto">
+                    <label for="Assunto" class="contact-label">Assunto</label>
+                </div>
+
+                <div class="contact-group">
+                    <textarea class="contact-field" placeholder="Mensagem" rows="4" style="height: 94px;"></textarea>
+                    <label for="Mensagem" class="contact-label">Mensagem</label>
+                </div>
+
+                <input id="contato-btn" type="submit" value="ENVIAR">
+            </div>
+        </form>
+    </div>
+</section>
