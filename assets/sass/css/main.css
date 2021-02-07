@@ -272,6 +272,9 @@ footer {
     margin-left: 5%; }
     #depositions #quote-left img {
       width: 100px; }
+      @media (max-width: 900px) {
+        #depositions #quote-left img {
+          width: 80px; } }
   #depositions .depositions-slick .depositions-card {
     width: 70vw;
     height: 180px;
@@ -283,6 +286,9 @@ footer {
       font-family: century-gothic, sans-serif;
       font-weight: 400;
       font-size: 20px; }
+      @media (max-width: 900px) {
+        #depositions .depositions-slick .depositions-card p {
+          font-size: 18px; } }
   #depositions #quote-right {
     display: flex;
     align-self: flex-end;
@@ -290,5 +296,8 @@ footer {
     margin-right: 5%; }
     #depositions #quote-right img {
       width: 100px; }
+      @media (max-width: 900px) {
+        #depositions #quote-right img {
+          width: 80px; } }
 
 /*# sourceMappingURL=main.css.map */
