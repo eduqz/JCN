@@ -5,13 +5,13 @@ body {
   position: fixed;
   z-index: 2;
   width: 100%;
-  height: 80px;
+  height: 60px;
   background-color: #03234A;
   display: flex;
   align-items: flex-end;
   justify-content: space-between; }
   #navbar-logo {
-    height: 50px;
+    height: 40px;
     margin-bottom: 10px;
     margin-left: 4%; }
   #navbar nav {
@@ -171,7 +171,7 @@ body {
         flex-direction: row;
         align-self: center; } }
 #about-us {
-  margin: 60px 0px; }
+  padding-top: 120px; }
   #about-us-cards {
     width: 100%;
     display: flex;
@@ -188,8 +188,10 @@ body {
         #about-us-cards #align-cards {
           flex-direction: column; } }
       #about-us-cards #align-cards .about-us-card {
-        width: 570px; }
+        max-width: 570px;
+        width: 45%; }
         #about-us-cards #align-cards .about-us-card h2 {
+          margin: 0%;
           font-family: century-gothic, sans-serif;
           font-weight: 400;
           font-size: 34px;
@@ -198,15 +200,16 @@ body {
             #about-us-cards #align-cards .about-us-card h2 {
               font-size: 28px; } }
         #about-us-cards #align-cards .about-us-card p {
+          margin: 20px 0%;
           font-family: century-gothic, sans-serif;
           font-weight: 400;
-          font-size: 14px;
+          font-size: 16px;
           color: #000000; }
         @media (max-width: 900px) {
           #about-us-cards #align-cards .about-us-card {
             width: auto; } }
   #about-us-emojs {
-    margin: 60px 0px;
+    margin-top: 60px;
     background-color: #CDD3DB;
     padding: 20px 4%;
     display: flex;
@@ -234,7 +237,7 @@ body {
     #about-us-emojs .emojs-cards p {
       font-family: century-gothic, sans-serif;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 16px;
       color: black; }
 
 footer {
@@ -250,5 +253,42 @@ footer {
     background-color: #0965D6; }
   footer img {
     width: 180px; }
+
+#depositions {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column; }
+  #depositions-title {
+    margin: 0% 4%;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #03234A; }
+    @media (max-width: 900px) {
+      #depositions-title {
+        font-size: 28px; } }
+  #depositions #quote-left {
+    margin-top: 30px;
+    margin-left: 5%; }
+    #depositions #quote-left img {
+      width: 100px; }
+  #depositions .depositions-slick .depositions-card {
+    width: 70vw;
+    height: 180px;
+    margin-right: 10vw;
+    justify-content: center; }
+    #depositions .depositions-slick .depositions-card:focus {
+      outline: transparent; }
+    #depositions .depositions-slick .depositions-card p {
+      font-family: century-gothic, sans-serif;
+      font-weight: 400;
+      font-size: 20px; }
+  #depositions #quote-right {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    margin-right: 5%; }
+    #depositions #quote-right img {
+      width: 100px; }
 
 /*# sourceMappingURL=main.css.map */

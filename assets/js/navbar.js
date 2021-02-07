@@ -12,8 +12,6 @@ $('.jsNavbarClose').click(function() {
 
 var $doc = $('html, body');
 $('.scrollSuave').click(function() {
-    document.getElementById('navbar-mobile').classList.toggle('active');
-    document.getElementById('navbar-menu').classList.toggle('deactive');
     $doc.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
