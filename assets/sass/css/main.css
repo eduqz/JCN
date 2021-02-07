@@ -303,63 +303,86 @@ footer {
           width: 80px; } }
 #contact {
   height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px 4%; }
-  #contact-text {
+  margin: 0px 4%;
+  display: grid;
+  grid-template-columns: 30% auto 60%;
+  grid-template-rows: repeat(2, 35%);
+  gap: 0px 0px;
+  grid-template-areas: "title . forms" "midias . forms";
+  align-content: center; }
+  @media (max-width: 1000px) {
+    #contact {
+      height: auto;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "title" "forms" "midias"; } }
+  @media (min-width: 1400px) {
+    #contact {
+      margin: 0% 15%; } }
+  #contact h2 {
+    width: 0px;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #03234A;
+    width: 90%;
+    grid-area: title; }
+    @media (max-width: 900px) {
+      #contact h2 {
+        font-size: 28px; } }
+  #contact #contact-text-medias {
     margin: 30px 0px;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    #contact-text h2 {
-      width: 0px;
-      font-family: century-gothic, sans-serif;
-      font-weight: 400;
-      font-size: 34px;
-      color: #03234A;
-      width: 90%; }
-      @media (max-width: 900px) {
-        #contact-text h2 {
-          font-size: 28px; } }
-    #contact-text-medias {
-      margin: 30px 0px; }
-      #contact-text-medias #localization {
-        display: flex;
-        align-items: flex-start; }
-        #contact-text-medias #localization p {
-          margin: 0% 0% 0% 5px;
-          color: #03234A;
-          font-family: century-gothic, sans-serif;
-          font-weight: 400;
-          font-size: 14px; }
-      #contact-text-medias #phone {
-        display: flex;
-        align-items: center;
-        margin-top: 10px; }
-        #contact-text-medias #phone p {
-          margin: 0% 0% 0% 5px;
-          color: #03234A;
-          font-family: century-gothic, sans-serif;
-          font-weight: 400;
-          font-size: 14px; }
+    grid-area: midias;
+    align-self: flex-end; }
+    #contact #contact-text-medias #localization {
+      display: flex;
+      align-items: flex-start; }
+      #contact #contact-text-medias #localization p {
+        margin: 0% 0% 0% 5px;
+        color: #03234A;
+        font-family: century-gothic, sans-serif;
+        font-weight: 400;
+        font-size: 14px; }
+    #contact #contact-text-medias #phone {
+      display: flex;
+      align-items: center;
+      margin-top: 10px; }
+      #contact #contact-text-medias #phone p {
+        margin: 0% 0% 0% 5px;
+        color: #03234A;
+        font-family: century-gothic, sans-serif;
+        font-weight: 400;
+        font-size: 14px; }
   #contact-forms {
     background-color: #03234A;
-    width: 55%;
     -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75); }
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.75);
+    padding: 10px 0px;
+    grid-area: forms; }
+    @media (max-width: 1000px) {
+      #contact-forms {
+        margin: 5% 0px; } }
     #contact-forms form {
       display: flex;
       justify-content: space-evenly;
       margin: 40px 0px; }
+      @media (max-width: 600px) {
+        #contact-forms form {
+          flex-direction: column;
+          align-items: center; } }
   #contact #contact-forms-1 {
     width: 40%; }
+    @media (max-width: 600px) {
+      #contact #contact-forms-1 {
+        width: 85%; } }
   #contact #contact-forms-2 {
     width: 40%;
     display: flex;
     flex-direction: column; }
+    @media (max-width: 600px) {
+      #contact #contact-forms-2 {
+        width: 85%; } }
     #contact #contact-forms-2 #contato-btn {
       appearance: none;
       border: none;
