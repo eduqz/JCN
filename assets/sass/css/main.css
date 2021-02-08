@@ -147,7 +147,8 @@ body {
       border-radius: 5px;
       letter-spacing: 1px;
       text-transform: uppercase;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
       #banner-title-button:focus {
         outline: transparent; }
   #banner-bar {
