@@ -8,15 +8,12 @@
     </div>
     
     <div class="depositions-slick">
+        {% for deposition in  depositions %}
         <div class="depositions-card">
-            <p>A parceria com a JCN foi essencial para os resultados positivos obtidos na empresa que atuo. Permitindo que pudéssemos focar em fazer negócios, com uma saúde financeira garantida.</p>
-            <p>Maria, Hering.</p>
+            <p>{{ deposition.deposition }}</p>
+            <p>{{ deposition.name }}, {{ deposition.work }}.</p>
         </div>
-
-        <div class="depositions-card">
-            <p>A parceria com a JCN foi essencial para os resultados positivos obtidos na empresa que atuo. Permitindo que pudéssemos focar em fazer negócios, com uma saúde financeira garantida.</p>
-            <p>Maria, Hering.</p>
-        </div>
+        {% endfor %}
     </div>
 
     <div id="quote-right">

@@ -6,18 +6,12 @@
         <div id="align-cards">
             <div class="about-us-card">
                 <h2>Sobre nós</h2>
-                <p>Desde xxxx, a JCN Finance Outsourcing, fundada e gerenciada por João Carvalho Neto, atua no mercado acreditando na gestão financeira de qualidade para todos.
-        
-                    Isso, olhando para cada empresa parceira, respeitando suas particularidades e entendendo suas necessidades específicas. Tendo como resultado clientes focados em gerar negócios.
-                    
-                    Praticidade, adaptabilidade, evolução, colaboratividade, comprometimento e acessibilidade são nossos pilares.</p>
+                <p>{{ aboutus.about_us }}</p>
             </div>
         
             <div class="about-us-card">
                 <h2>Finance Outsourcing</h2>
-                <p>Outsourcing é a prática de uma empresa contratar outra para complementar seus serviços a um custo menor.
-        
-                    O Finance Outsourcing, ou terceirização do departamento financeiro, permite que uma empresa especializada gerencie desde tarefas simples do dia a dia, como contas a pagar e fluxo de caixa, até trabalhos mais analíticos, como análises de desempenho econômico-financeiro para orientação à gestão estratégica dos negócios.</p>
+                <p>{{ aboutus.finance }}</p>
             </div>
         </div>
     </div>
@@ -25,27 +19,27 @@
     <div id="about-us-emojs">
         <div id="align-emojs">
             <div class="emojs-cards">
-                <img src="{% static 'images/smile.png' %}" alt="">
-                <h3>4,02 milhões</h3>
-                <p>Trabalhadores Terceirizados no Brasil.</p>
+                <img src="{{ strip.emoj_1.url }}" alt="">
+                <h3>{{ strip.title_1 }}</h3>
+                <p>{{ strip.text_1 }}</p>
             </div>
     
             <div class="emojs-cards">
-                <img src="{% static 'images/smile.png' %}" alt="">
-                <h3>4,02 milhões</h3>
-                <p>Trabalhadores Terceirizados no Brasil.</p>
+                <img src="{{ strip.emoj_2.url }}" alt="">
+                <h3>{{ strip.title_2 }}</h3>
+                <p>{{ strip.text_2 }}</p>
             </div>
     
             <div class="emojs-cards">
-                <img src="{% static 'images/smile.png' %}" alt="">
-                <h3>4,02 milhões</h3>
-                <p>Trabalhadores Terceirizados no Brasil.</p>
+                <img src="{{ strip.emoj_3.url }}" alt="">
+                <h3>{{ strip.title_3 }}</h3>
+                <p>{{ strip.text_3 }}</p>
             </div>
             
             <div class="emojs-cards">
-                <img src="{% static 'images/smile.png' %}" alt="">
-                <h3>4,02 milhões</h3>
-                <p>Trabalhadores Terceirizados no Brasil.</p>
+                <img src="{{ strip.emoj_4.url }}" alt="">
+                <h3>{{ strip.title_4 }}</h3>
+                <p>{{ strip.text_4 }}</p>
             </div>
         </div>
     </div>
