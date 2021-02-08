@@ -11,6 +11,12 @@ $('.jsNavbarClose').click(function() {
 });
 
 var $doc = $('html, body');
+$('.jsNavMobile').click(function() {
+    document.getElementById('navbar-mobile').classList.toggle('active');
+    document.getElementById('navbar-menu').classList.toggle('deactive');
+});
+
+var $doc = $('html, body');
 $('.scrollSuave').click(function() {
     $doc.animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
