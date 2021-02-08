@@ -1,0 +1,24 @@
+{% load static %}
+
+<section id="services">
+    <h2 id="services-title">Serviços</h2>
+    <div id="services-carousel">
+        <button class="services-button-prev">
+            <img src="{% static 'images/button.svg' %}" alt="botão de voltar">
+        </button>
+        
+        <div class="services-slick">
+            {% for service in services %}
+            <div class="services-card">
+                <img src="{{ service.emoj.url }}" alt="">
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.text }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <button class="services-button-next">
+            <img src="{% static 'images/button.svg' %}" alt="botão de passar">
+        </button>
+    </div>
+</section>
