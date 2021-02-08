@@ -18,32 +18,33 @@
 
     <div id="contact-forms">
         <form method="POST" autocomplete="off">
+            {% csrf_token %}
             <div id="contact-forms-1">
                 <div class="contact-group">
-                   <input type="name" class="contact-field" placeholder="Nome">
+                   <input name="nome" type="name" class="contact-field" placeholder="Nome">
                    <label for="name" class="contact-label">Nome</label>
                 </div>
    
                 <div class="contact-group">
-                   <input type="email" class="contact-field" placeholder="E-mail*">
-                   <label for="email" class="contact-label">E-mail*</label>
+                   <input name="email" type="email" class="contact-field" placeholder="E-mail*">
+                   <label for="email"  required="required" class="contact-label">E-mail*</label>
                 </div>
    
                 <div class="contact-group">
-                   <input type="tel" class="contact-field" placeholder="Telefone">
+                   <input name="telefone" type="tel" class="contact-field" placeholder="Telefone">
                    <label for="tel" class="contact-label">Telefone</label>
                 </div>
             </div>
 
             <div id="contact-forms-2">
                 <div class="contact-group">
-                    <input type="text" class="contact-field" placeholder="Assunto">
+                    <input name="assunto" type="text" class="contact-field" placeholder="Assunto">
                     <label for="Assunto" class="contact-label">Assunto</label>
                 </div>
 
                 <div class="contact-group">
-                    <textarea class="contact-field" placeholder="Mensagem" rows="4" style="height: 94px;"></textarea>
-                    <label for="Mensagem" class="contact-label">Mensagem</label>
+                    <textarea name="mensagem" class="contact-field" placeholder="Mensagem" rows="4" style="height: 94px;"></textarea>
+                    <label for="Mensagem" class="contact-label" required="required">Mensagem</label>
                 </div>
 
                 <input id="contato-btn" type="submit" value="ENVIAR">

@@ -1,0 +1,8 @@
+{% block subject %}{{assunto}}{% endblock %}
+{% block plain %}
+Mensagem enviada por : {{ nome }}
+Contato:
+    E-mail: {{ email }}
+    Telefone: {{telefone}}
+Mensagem: {{mensagem}}
+{% endblock %}

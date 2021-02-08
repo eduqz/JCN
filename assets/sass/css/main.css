@@ -421,7 +421,7 @@ footer {
   font-size: 16px;
   color: #A7BEDA;
   padding: 22px 0px 10px 0px;
-  background: #245DA3;
+  background: #245DA3 !important;
   transition: border-color 0.2s; }
 
 .contact-field::placeholder {
