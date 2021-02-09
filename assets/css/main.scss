@@ -3,6 +3,26 @@ $blue-button: #0965D6;
 
 body {
     margin: 0;
+    position: relative;
+}
+
+#logo-site {
+    position: absolute;
+    z-index: -1;
+    margin-top: 80px;
+    width: 50vw;
+    right: 0px;
+
+    @media (max-width: 900px) {
+        width: 80vw;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
 }
 
 @mixin  button {

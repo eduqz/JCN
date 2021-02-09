@@ -1,3 +1,8 @@
+window.onload = function() {
+    const heightBody = document.body.offsetHeight;
+    document.getElementById('logo-site').style.height = document.body.offsetHeight * 55 / 100 + 'px';
+};
+
 var $doc = $('html, body');
 $('.jsNavbar').click(function() {
     document.getElementById('navbar-mobile').classList.toggle('active');
