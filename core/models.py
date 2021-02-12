@@ -35,16 +35,16 @@ class Services(models.Model):
         return self.title
 
 class Strip(SingletonModel):
-    emoj_1 = models.ImageField(upload_to='strip/1/', verbose_name='Primeiro emoticon')
+    emoj_1 = models.ImageField(upload_to='strip/1/', verbose_name='Primeiro emoticon', null=True, blank=True)
     title_1 = models.CharField('Primeiro título', max_length=12)
     text_1 = models.TextField('Primeiro texto', max_length=100)
-    emoj_2 = models.ImageField(upload_to='strip/2/', verbose_name='Segundo emoticon')
+    emoj_2 = models.ImageField(upload_to='strip/2/', verbose_name='Segundo emoticon', null=True, blank=True)
     title_2 = models.CharField('Segundo título', max_length=12)
     text_2 = models.TextField('Segundo texto', max_length=100)
-    emoj_3 = models.ImageField(upload_to='strip/3/', verbose_name='Terceiro emoticon')
+    emoj_3 = models.ImageField(upload_to='strip/3/', verbose_name='Terceiro emoticon', null=True, blank=True)
     title_3 = models.CharField('Terceiro título', max_length=12)
     text_3 = models.TextField('Terceiro texto', max_length=100)
-    emoj_4 = models.ImageField(upload_to='strip/4/', verbose_name='Quarto emoticon')
+    emoj_4 = models.ImageField(upload_to='strip/4/', verbose_name='Quarto emoticon', null=True, blank=True)
     title_4 = models.CharField('Quarto título', max_length=12)
     text_4 = models.TextField('Quarto texto', max_length=100)
 
