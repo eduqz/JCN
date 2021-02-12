@@ -15,7 +15,7 @@ from pathlib import Path
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
@@ -149,6 +149,3 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'jcnsite01@gmail.com'
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD') 
-
-import django_heroku
-django_heroku.settings(locals())
