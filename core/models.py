@@ -34,7 +34,7 @@ class Services(models.Model):
     def __str__(self):
         return self.title
 
-class Strip(SingletonModel):
+class Strip(models.Model):
     emoj_1 = models.ImageField(upload_to='strip/1/', verbose_name='Primeiro emoticon', null=True, blank=True)
     title_1 = models.CharField('Primeiro título', max_length=12)
     text_1 = models.TextField('Primeiro texto', max_length=100)
