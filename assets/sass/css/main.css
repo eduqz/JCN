@@ -337,7 +337,7 @@ footer {
       grid-template-columns: auto;
       grid-template-rows: auto;
       grid-template-areas: "title" "forms" "midias"; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 2000px) {
     #contact {
       margin: 0% 15%; } }
   #contact h2 {
