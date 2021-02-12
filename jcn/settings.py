@@ -152,7 +152,3 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 import django_heroku
 django_heroku.settings(locals())
-
-SECURE_SSL_REDIRECT = True
-
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
