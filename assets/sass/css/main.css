@@ -169,7 +169,7 @@ body {
         outline: transparent; }
   #banner-bar {
     width: 35px;
-    height: 200px;
+    height: 120px;
     margin-right: 4%;
     background-color: #CDD3DB;
     display: flex;
