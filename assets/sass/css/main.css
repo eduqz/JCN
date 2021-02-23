@@ -223,7 +223,8 @@ body {
           font-family: century-gothic, sans-serif;
           font-weight: 400;
           font-size: 16px;
-          color: #000000; }
+          color: #000000;
+          text-align: justify; }
         @media (max-width: 900px) {
           #about-us-cards #align-cards .about-us-card {
             width: auto; } }
@@ -504,29 +505,29 @@ label,
         #services-carousel .services-slick {
           width: 100%; } }
       #services-carousel .services-slick .services-card {
-        height: 300px;
+        height: 350px;
         margin: 0px 10px;
         background-color: #03234A;
         padding: 20px;
         color: #DEE3E8; }
         @media (max-width: 1400px) {
           #services-carousel .services-slick .services-card {
-            height: 350px; } }
+            height: 400px; } }
         @media (max-width: 1200px) {
           #services-carousel .services-slick .services-card {
-            height: 430px; } }
+            height: 480px; } }
         @media (max-width: 1050px) {
           #services-carousel .services-slick .services-card {
-            height: 400px; } }
+            height: 450px; } }
         @media (max-width: 900px) {
           #services-carousel .services-slick .services-card {
-            height: 350px; } }
+            height: 400px; } }
         @media (max-width: 630px) {
           #services-carousel .services-slick .services-card {
-            height: 300px; } }
+            height: 350px; } }
         @media (max-width: 420px) {
           #services-carousel .services-slick .services-card {
-            height: 380px; } }
+            height: 420px; } }
         #services-carousel .services-slick .services-card:focus {
           outline: none; }
         #services-carousel .services-slick .services-card img {
@@ -535,13 +536,15 @@ label,
           font-family: century-gothic, sans-serif;
           font-weight: 400;
           font-size: 16px;
-          margin: 20px 0px; }
+          margin: 20px 0px;
+          text-align: justify; }
         #services-carousel .services-slick .services-card p {
           font-family: century-gothic, sans-serif;
           font-weight: 600;
           font-size: 12px;
           letter-spacing: 1px;
-          margin: 0%; }
+          margin: 0%;
+          text-align: justify; }
     #services-carousel .services-button-next {
       height: 40px;
       transform: rotate(90deg);

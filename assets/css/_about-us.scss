@@ -1,12 +1,10 @@
 #about-us {
     padding-top: 120px;
-
     &-cards {
         width: 100%;
         display: flex;
         justify-content: center;
         align-self: center;
-
         #align-cards {
             max-width: 1400px;
             width: 100%;
@@ -14,72 +12,59 @@
             display: flex;
             align-self: center;
             justify-content: space-between;
-
             @media (max-width: 900px) {
                 flex-direction: column;
             }
-
             .about-us-card {
                 max-width: 570px;
                 width: 45%;
-        
                 h2 {
                     margin: 0%;
                     @include titles;
                 }
-        
                 p {
                     margin: 20px 0%;
                     @include text-pattern;
                     color: #000000;
+                    text-align: justify;
                 }
-    
                 @media (max-width: 900px) {
                     width: auto;
                 }
             }
         }
-
     }
-
     &-emojs {
         margin-top: 60px;
         background-color: #CDD3DB;
         padding: 20px 4%;
         display: flex;
         justify-content: center;
-
-        #align-emojs{
+        #align-emojs {
             max-width: 1400px;
             width: 100%;
             display: flex;
             align-self: center;
             justify-content: space-between;
-
             @media (max-width: 900px) {
                 flex-direction: column;
             }
         }
-
         .emojs-cards {
             width: 230px;
-
             img {
                 width: 50px;
             }
-
             h3 {
                 font-family: century-gothic, sans-serif;
                 font-weight: 400;
                 font-size: 24px;
                 color: black;
-                margin: 2px 0px; 
-                
+                margin: 2px 0px;
                 @media (max-width: 900px) {
                     font-size: 20px;
                 }
             }
-
             p {
                 @include text-pattern;
                 color: black;
