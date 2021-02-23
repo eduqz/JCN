@@ -6,13 +6,13 @@
         <button class="services-button-prev">
             <img src="{% static 'images/button.svg' %}" alt="botão de voltar">
         </button>
-        
+
         <div class="services-slick">
             {% for service in services %}
             <div class="services-card">
                 <img src="{{ service.emoj.url }}" alt="">
                 <h3>{{ service.title }}</h3>
-                <p style="text-align: justify;">{{ service.text }}</p>
+                <p style="text-align: justify;">{{ service.text | linebreaks }}</p>
             </div>
             {% endfor %}
         </div>
