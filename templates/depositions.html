@@ -6,11 +6,11 @@
     <div id="quote-left">
         <img src="{% static 'images/quote-left.svg' %}" alt="aspas">
     </div>
-    
+
     <div class="depositions-slick">
-        {% for deposition in  depositions %}
+        {% for deposition in depositions %}
         <div class="depositions-card">
-            <p style="text-align: justify;">{{ deposition.deposition }}</p>
+            <p>{{ deposition.deposition }}</p>
             <p>{{ deposition.name }}, {{ deposition.work }}.</p>
         </div>
         {% endfor %}
@@ -18,5 +18,5 @@
 
     <div id="quote-right">
         <img src="{% static 'images/quote-right.svg' %}" alt="aspas">
-    </div>  
+    </div>
 </section>

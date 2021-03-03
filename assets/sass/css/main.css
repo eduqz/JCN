@@ -224,8 +224,7 @@ body {
           font-family: century-gothic, sans-serif;
           font-weight: 400;
           font-size: 16px;
-          color: #000000;
-          text-align: justify; }
+          color: #000000; }
         @media (max-width: 900px) {
           #about-us-cards #align-cards .about-us-card {
             width: auto; } }
@@ -537,15 +536,13 @@ label,
           font-family: century-gothic, sans-serif;
           font-weight: 600;
           font-size: 16px;
-          margin: 20px 0px;
-          text-align: justify; }
+          margin: 20px 0px; }
         #services-carousel .services-slick .services-card p {
           font-family: century-gothic, sans-serif;
           font-weight: 400;
           font-size: 12px;
           letter-spacing: 1px;
-          margin: 0%;
-          text-align: justify; }
+          margin: 0%; }
     #services-carousel .services-button-next {
       height: 40px;
       transform: rotate(90deg);
