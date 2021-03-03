@@ -10,7 +10,8 @@
         <div class="services-slick">
             {% for service in services %}
             <div class="services-card">
-                <img src="{{ service.emoj.url }}" alt="">
+                {% if service.emoj|length > 0 %}
+                <img src="{{ service.emoj.url }}" alt=""> {% else %}{% endif %}
                 <h3>{{ service.title }}</h3>
                 <p>{{ service.text | linebreaks }}</p>
             </div>

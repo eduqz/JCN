@@ -24,7 +24,7 @@ class AboutUs(SingletonModel):
 class Services(models.Model):
     title = models.CharField('Título', max_length=50)
     text = models.TextField('Texto')
-    emoj = models.ImageField(upload_to='services/', verbose_name='Emotion')
+    emoj = models.ImageField(upload_to='services/', verbose_name='Emotion', null=True, blank=True)
 
     class Meta:
         ordering = ['title']
