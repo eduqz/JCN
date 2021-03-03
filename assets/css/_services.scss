@@ -38,27 +38,27 @@
                 width: 100%;
             }
             .services-card {
-                height: 350px;
+                height: 380px;
                 margin: 0px 10px;
                 background-color: $dark-blue;
                 padding: 20px;
                 @media (max-width: 1400px) {
-                    height: 400px;
+                    height: 430px;
                 }
                 @media (max-width: 1200px) {
-                    height: 480px;
+                    height: 510px;
                 }
                 @media (max-width: 1050px) {
-                    height: 450px;
+                    height: 480px;
                 }
                 @media (max-width: 900px) {
-                    height: 400px;
+                    height: 430px;
                 }
                 @media (max-width: 630px) {
-                    height: 350px;
+                    height: 380px;
                 }
                 @media (max-width: 420px) {
-                    height: 420px;
+                    height: 450px;
                 }
                 color: #DEE3E8;
                 &:focus {
@@ -78,7 +78,6 @@
                     font-weight: 400;
                     font-size: 12px;
                     letter-spacing: 1px;
-                    margin: 0%;
                 }
             }
         }

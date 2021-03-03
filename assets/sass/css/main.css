@@ -505,29 +505,29 @@ label,
         #services-carousel .services-slick {
           width: 100%; } }
       #services-carousel .services-slick .services-card {
-        height: 350px;
+        height: 380px;
         margin: 0px 10px;
         background-color: #03234A;
         padding: 20px;
         color: #DEE3E8; }
         @media (max-width: 1400px) {
           #services-carousel .services-slick .services-card {
-            height: 400px; } }
+            height: 430px; } }
         @media (max-width: 1200px) {
           #services-carousel .services-slick .services-card {
-            height: 480px; } }
+            height: 510px; } }
         @media (max-width: 1050px) {
           #services-carousel .services-slick .services-card {
-            height: 450px; } }
+            height: 480px; } }
         @media (max-width: 900px) {
           #services-carousel .services-slick .services-card {
-            height: 400px; } }
+            height: 430px; } }
         @media (max-width: 630px) {
           #services-carousel .services-slick .services-card {
-            height: 350px; } }
+            height: 380px; } }
         @media (max-width: 420px) {
           #services-carousel .services-slick .services-card {
-            height: 420px; } }
+            height: 450px; } }
         #services-carousel .services-slick .services-card:focus {
           outline: none; }
         #services-carousel .services-slick .services-card img {
@@ -541,8 +541,7 @@ label,
           font-family: century-gothic, sans-serif;
           font-weight: 400;
           font-size: 12px;
-          letter-spacing: 1px;
-          margin: 0%; }
+          letter-spacing: 1px; }
     #services-carousel .services-button-next {
       height: 40px;
       transform: rotate(90deg);
