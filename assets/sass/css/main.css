@@ -347,7 +347,7 @@ footer {
     font-weight: 400;
     font-size: 34px;
     color: #03234A;
-    width: 90%;
+    width: 92%;
     grid-area: title; }
     @media (max-width: 900px) {
       #contact h2 {
