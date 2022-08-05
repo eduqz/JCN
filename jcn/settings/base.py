@@ -152,7 +152,7 @@ EMAIL_HOST_USER = 'jcnsite01@gmail.com'
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD') 
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
-STATIC_ROOT = os.path.join(BASE_DIR, '..', 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, '..', 'staticfiles')
 
 import django_heroku
 django_heroku.settings(locals())
