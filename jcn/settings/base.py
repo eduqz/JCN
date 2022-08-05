@@ -45,8 +45,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.middleware.security.SecurityMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -149,6 +150,9 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'jcnsite01@gmail.com'
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD') 
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, '..', 'staticfiles')
 
 import django_heroku
 django_heroku.settings(locals())
